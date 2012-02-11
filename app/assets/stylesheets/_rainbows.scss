@@ -1,0 +1,16 @@
+/*
+ * CSS animated rainbow dividers of awesome 
+ * by Chris Heilmann @codepo8 and Lea Verou @leaverou 
+**/
+@-webkit-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+
+.catchadream {
+  background-image:-webkit-linear-gradient( left, red, orange, yellow, green,
+                                          blue, indigo, violet, indigo, blue,
+                                          green, yellow, orange, red );
+  -webkit-animation:charlieeee 2.5s forwards linear infinite;
+  background-size:50% auto;
+}

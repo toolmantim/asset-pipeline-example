@@ -1,0 +1,18 @@
+// Notice we don't use Sprockets 'require' directives here, this is
+// the Right Way.
+//
+// See the sass-rails gem's readme for more info.
+
+@import "reset";
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  background: goldenrod asset-data-url('bg.jpg') no-repeat;
+  -webkit-background-size: 100% 100%;
+}
+
+@import "views/*";

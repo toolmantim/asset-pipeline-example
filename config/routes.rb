@@ -1,4 +1,5 @@
 AssetPipelineExample::Application.routes.draw do
+  root :to => "unicorns#gallop"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

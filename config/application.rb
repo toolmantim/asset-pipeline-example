@@ -61,5 +61,10 @@ module AssetPipelineExample
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Here are all the files 
+    config.assets.precompile = %w(
+      application.css application.js uncompiled/*
+    )
   end
 end
