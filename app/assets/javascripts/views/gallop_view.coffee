@@ -18,5 +18,5 @@ class @GallopView extends Backbone.View
     @dreamTrack.play()
 
   loadDreamTrack: ->
-    url= $("link[rel='dream-track']").attr("href")
+    url = $("link[rel='dream-track']").attr("href")
     @dreamTrack = $("<audio preload/>").attr("src", url).get(0)

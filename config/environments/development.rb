@@ -28,4 +28,9 @@ AssetPipelineExample::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # Uncomment the following to test asset compilation:
+  # config.assets.compile = false
+  # config.assets.digest = true
+  
 end

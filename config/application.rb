@@ -63,8 +63,8 @@ module AssetPipelineExample
     config.assets.version = '1.0'
     
     # Here are all the files 
-    config.assets.precompile = %w(
-      application.css application.js uncompiled/*
+    config.assets.precompile += %w(
+      application.css application.js audio/* images/uncompiled/*
     )
   end
 end
