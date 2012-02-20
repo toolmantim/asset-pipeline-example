@@ -58,14 +58,5 @@ module AssetPipelineExample
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    
-    # Here we specify exactly which files are compiled and included in public/assets by rake assets:precompile
-    config.assets.precompile = [ /\Aapplication.(css|js)/, /\Auncompiled/ ]
-    # Rails' default is:
-    #   [ Proc.new{ |path| !File.extname(path).in?(['.js', '.css']) },
-    #     /(?:\/|\\|\A)application\.(css|js)$/ ]
-    #
-    # A good way of debugging asset compilation is to use:
-    #   [ Proc.new {|path| puts path} ]
   end
 end

@@ -1,16 +1,8 @@
 # Asset Pipeline Example
 
-An example Rails 3.2 app showing how to use the asset pipeline, scaring unicorns and activating epic rainbows (srsly).
+Example Rails 3.2 app showing how to use the asset pipeline, how to scare unicorns, and how to activate epic rainbows.
 
-In `application.rb` we specify which files we want to precompile and include in `public/assets`:
-
-    config.assets.precompile = [ /\Aapplication.(css|js)/, /\Auncompiled/ ]
-
-In this case we want to generate only `application.(css|js)` and any files in an `uncompiled` directory.
-
-All other files in `app/assets` are assumed to be used in `application.(css|js)`, either by data-uri inlining during CSS compilation, or by the Sprockets `require` directive during JS compilation.
-
-Other things to note in the app:
+Features:
 
  * Laying out SASS files using `@import` instead of the Sprockets `require` directive (as per [the note in the README for sass-rails](https://github.com/rails/sass-rails#readme))
  * Laying out JS files using `require_tree`
@@ -39,7 +31,7 @@ If you're running with `config.assets.compile = false` and run `rake assets:comp
 
 ### Avoiding Sprockets directives in SASS
 
-As per [the note in the README for sass-rails](https://github.com/rails/sass-rails#readme)--the Gem that Rails loads from your Gemfile which adds SASS support to the asset pipeline--you should never use the Sprockets `require` directives in your CSS.
+As per [the note in the README for sass-rails](https://github.com/rails/sass-rails#readme)–the Gem that Rails loads from your Gemfile which adds SASS support to the asset pipeline–you should never use the Sprockets `require` directives in your CSS.
 
 SASS (when used through `sass-rails`) can do everything the Sprockets directives can with the bonus of playing well with `@import` and `@extend`.
 
