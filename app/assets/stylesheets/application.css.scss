@@ -1,7 +1,8 @@
-// Notice we don't use Sprockets 'require' directives here, this is
-// the Right Way.
+// The CSS for the entire application
 //
-// See the sass-rails gem's readme for more info.
+// Notice we don't use Sprockets 'require' directives below. This is
+// the Right Way (see the sass-rails gem's readme for more info) to include
+// files in SASS
 
 @import "reset";
 
