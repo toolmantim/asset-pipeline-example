@@ -1,12 +1,12 @@
-#= require ./vendor/jquery
-#= require ./vendor/underscore
-#= require ./vendor/backbone
+#= require jquery
+#= require underscore
+#= require backbone
 
 #= require_tree ./templates
 #= require_tree ./views
 
 # The JS for the entire application
-# 
+#
 # The load order of files is explicitly specified above using Sprockets
 # directives.
 
