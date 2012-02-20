@@ -1,6 +1,6 @@
 # Asset Pipeline Example
 
-Example Rails 3.2 app showing how to use the asset pipeline, how to scare unicorns, and how to activate epic rainbows.
+Example Rails 3.2 app showing how to: use the asset pipeline, scare unicorns, and activate epic rainbows.
 
 Features:
 
